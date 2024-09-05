@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3284399488523447660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5224339788454444728}
+  - component: {fileID: 1542044412741922740}
+  m_Layer: 0
+  m_Name: Character Data Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5224339788454444728
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3284399488523447660}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1542044412741922740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3284399488523447660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b8694044abb6147934f42634176d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterData: {fileID: 11400000, guid: e8d59aa375d55e647aaa9c09757a2335, type: 2}
+  characterClassData:
+  - {fileID: 11400000, guid: da33c584c6eecb44f85c20b350f2b61b, type: 2}
+  - {fileID: 11400000, guid: b23bd70247737324b983ee00af40e6fb, type: 2}
+  - {fileID: 11400000, guid: 89277c5951a493343a701606265b8af9, type: 2}
+  - {fileID: 11400000, guid: ca14321f6628a5048a70537cc4fbcedd, type: 2}
+  - {fileID: 11400000, guid: 090ecc8b990f7ef4298054241d2b009d, type: 2}
+  characterTraitData:
+  - {fileID: 11400000, guid: b360c05f97f93fc48ba899c46cd496bd, type: 2}
+  classSelectButton:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  traitSelectButton:
+  - {fileID: 0}
+  playButton: {fileID: 0}
+  characterName: 
+  selectedColor: {r: 0, g: 1, b: 0, a: 1}
+  unselectedColor: {r: 1, g: 1, b: 1, a: 1}
