@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[ CreateAssetMenu(menuName = "Data/Character")]
+[ CreateAssetMenu(menuName = "Data/Character/New Character")]
 public class CharacterData : ScriptableObject
 {
     [Header("Character Name")]
@@ -8,15 +8,16 @@ public class CharacterData : ScriptableObject
     public GameObject CharacterModel;
 
     [Header("Character Heathy Shield and Mana")]
-    public int HeathyPoint;
-    public int Shield;
+    public int HeathyPoint = 100;
+    public int Energy = 0;
 
     [Header("Character Basic Status")]
-    public int Strength;
-    public int Dexterity;
-    public int Intelligence;
-    public int WillPower;
-    public int Movement;
+    public int BesicPoint = 16;
+    public int Strength = 1;
+    public int Dexterity = 1;
+    public int Intelligence = 1;
+    public int WillPower = 1;
+    public int Movement = 1;
 
 
     public CharacterClassData CharacterClassData;

@@ -8,7 +8,7 @@ public class UIShowModelCharacter : MonoBehaviour
 {
     public List<GameObject> CharacterModel = new List<GameObject>();
     private GameObject currentCharacterModel;
-    private int ModelIndex = 0;
+    public int ModelIndex = 0;
     public Button NextModelButton;
     public Button PrevModelButton;
     private bool isShowModel = false;
@@ -40,17 +40,32 @@ public class UIShowModelCharacter : MonoBehaviour
     void NextModel() 
     {
         isShowModel = false;
-        if (ModelIndex < CharacterModel.Count - 1)
+   
+        if (ModelIndex <= CharacterModel.Count - 1)
         {
             ModelIndex++;
         }
+
+        if (ModelIndex > CharacterModel.Count - 1)
+        {
+            ModelIndex = 0;
+        }
+
+
     }
     void PrevModel() 
     {
         isShowModel = false;
-        if (ModelIndex > 0) 
+        
+        if (ModelIndex >= 0) 
         {
             ModelIndex--;
-        }      
+        }
+
+        if (ModelIndex < 0)
+        {
+            ModelIndex = CharacterModel.Count - 1;
+        }
+
     }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4136091303410476619}
   - component: {fileID: 7508424948064300025}
   - component: {fileID: 8622513130058894785}
+  - component: {fileID: 5548525319501560802}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -46,6 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdfd5cd19c638c547b24dd256a0b310a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  modeManager: {fileID: 0}
+  turnManager: {fileID: 0}
 --- !u!114 &7508424948064300025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,3 +75,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTurnState: 0
+--- !u!114 &5548525319501560802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2313445025299751007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e696da92061c434abbc4fe6a0524519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currencyData: {fileID: 11400000, guid: de6dcca14aff521459eb95839ea17963, type: 2}

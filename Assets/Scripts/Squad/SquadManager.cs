@@ -6,7 +6,7 @@ public class SquadManager : MonoBehaviour
 {
     public List<CharacterData> squadMembers = new List<CharacterData>();
     public List<CharacterData> characterInSquad;
-
+    public List<Transform> playerTranstorm;
     private float spacing = 1f;
     private void Awake()
     {
@@ -14,11 +14,15 @@ public class SquadManager : MonoBehaviour
         {
             AddCharacterToSquad(character);          
         }
+
+        playerTranstorm.Add(GameObject.Find("Player Manager").transform);             
+    }
+    private void Start()
+    {
         if (GameManager.Instance.modeManager.currentModeState == ModeState.ExplorerMode)
         {
-            InstantiateCharacterInExplorerMode(squadMembers);
+            InstantiateCharacterInExplorerMode(characterInSquad, playerTranstorm);
         }
-                     
     }
     private void AddCharacterToSquad(CharacterData character)
     {
@@ -35,7 +39,7 @@ public class SquadManager : MonoBehaviour
             Destroy(character);
         }
     }
-    public void InstantiateCharacterInExplorerMode(List<CharacterData> characters)
+    public void InstantiateCharacterInExplorerMode(List<CharacterData> characters, List<Transform> playerTranstorm)
     {
         if (characters.Count != characterInSquad.Count)
         {
@@ -48,7 +52,7 @@ public class SquadManager : MonoBehaviour
 
             Vector3 spwanpoint = new Vector3(i*spacing,0,0);
 
-            GameObject newCharacter = Instantiate(characters[i].CharacterModel, spwanpoint, Quaternion.identity);
+            GameObject newCharacter = Instantiate(characters[i].CharacterModel, spwanpoint, Quaternion.identity, playerTranstorm[0]);
             newCharacter.name = character.CharacterName;
         }      
     }

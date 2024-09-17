@@ -23,9 +23,12 @@ public class UIBattleInfo : MonoBehaviour
     public void ShowBattleInfo()
     {
         BattleInfo.SetActive(true);
+        GameManager.Instance.turnManager.currentTurnState = TurnState.Waiting;
     }
     void CloseBattleInfo()
     {
         BattleInfo.SetActive(false);
+        GameManager.Instance.turnManager.currentTurnState = TurnState.PlayerTurn;
     }
+    
 }

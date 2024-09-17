@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainTitle.unity
+    path: Assets/Scenes/Main Title.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/CreateCharacter.unity
+    path: Assets/Scenes/Create Character.unity
     guid: fe1d0c0212e7df74ca6342ebecbab7d1
   - enabled: 1
-    path: Assets/Scenes/Explorer_01.unity
+    path: Assets/Scenes/Biochemical Labatory.unity
     guid: 953e7bda27d74554dbe4b5ee3cf8494d
   - enabled: 1
-    path: Assets/Scenes/Battle_01.unity
+    path: Assets/Scenes/Nameless Village.unity
     guid: 45a8598fc7d88184aa0e85049fbfd3ca
   m_configObjects: {}

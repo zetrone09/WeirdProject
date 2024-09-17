@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03e822598e4b2404a9ce1dba44e07c6e, type: 3}
-  m_Name: CharacterData
+  m_Name: Player
   m_EditorClassIdentifier: 
   CharacterName: Iz
   CharacterModel: {fileID: 4392513442603955193, guid: ae137b4da8fb54c4f8c346dbcc2dd726,
     type: 3}
-  HeathyPoint: 20
-  Shield: 5
-  Strength: 5
-  Dexterity: 5
-  Intelligence: 5
-  WillPower: 5
-  Movement: 5
+  HeathyPoint: 100
+  Energy: 0
+  BesicPoint: 0
+  Strength: 13
+  Dexterity: 2
+  Intelligence: 2
+  WillPower: 3
+  Movement: 1
   CharacterClassData: {fileID: 11400000, guid: da33c584c6eecb44f85c20b350f2b61b, type: 2}
   CharacterTraitData: {fileID: 0}
